@@ -1,0 +1,14 @@
+{% from 'image-optimize/_includes/macros' import configWarning %}
+
+{% import "_includes/forms" as forms %}
+
+<!-- baseUrl -->
+{{ forms.autosuggestField({
+    label: 'TwicPics Base URL',
+    instructions: "The base URL to use for the TwicPics transform service."|t('image-optimize'),
+    suggestEnvVars: true,
+    id: 'baseUrl',
+    name: 'baseUrl',
+    value: imageTransform.baseUrl,
+    warning: configWarning('imageTransformTypeSettings', 'image-optimize'),
+}) }}
