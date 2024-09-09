@@ -23,7 +23,7 @@ Open your terminal and run the following commands:
 cd /path/to/my-project.test
 
 # tell Composer to load the plugin
-composer require pixelcode/imageoptimize-twicpics
+composer require pixelcode/craft-imageoptimize-twicpics
 
 # tell Craft to install the plugin
 ./craft plugin/install imageoptimize-twicpics
