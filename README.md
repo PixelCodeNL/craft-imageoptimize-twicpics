@@ -4,7 +4,7 @@ This is an Image Transform for the ImageOptimize Craft CMS plugin that implement
 
 ## Requirements
 
-This plugin requires Craft CMS 4.3.5 or later, and PHP 8.1.28 or later.
+This plugin requires Craft CMS 4.3.5 / 5+ or later, and PHP 8.1.28 or later.
 
 ## Installation
 

@@ -122,11 +122,12 @@ class TwicPicsImageTransform extends ImageTransform
             $transformString .= "=" . ($transform['width'] ?? $asset->getWidth()) . "x" . ($transform['height'] ?? $asset->getHeight());
         }
 
-        // Build the URL
-        $url = "$baseUrl/{$assetUri}?twic=v1/output=auto/{$transformString}";
+        // Build the URL. Add focus before the transformString if there is a focal point
+        $url = "$baseUrl/{$assetUri}?twic=v1/output=auto";
         if ($focus) {
             $url .= "/$focus";
         }
+        $url .= "/$transformString";
 
         // Check if revAssetUrls is enabled
         if (Craft::$app->getConfig()->getGeneral()->revAssetUrls) {
