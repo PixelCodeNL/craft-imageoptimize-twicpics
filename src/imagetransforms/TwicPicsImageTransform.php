@@ -106,7 +106,7 @@ class TwicPicsImageTransform extends ImageTransform
 
         if (!empty($focalPoint)) {
             // If focal point is set, use x and y coordinates
-            $focus = "focus={$focalPoint['x']}x{$focalPoint['y']}";
+            $focus = "focus={$focalPoint['x']}sx{$focalPoint['y']}s";
         } else {
             // If no focal point is set, map the default position to TwicPics anchors
             $position = $transform->position ?? 'center-center';
